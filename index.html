@@ -3,39 +3,56 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>File Download Page</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Download Assignment</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f7f8;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    h1 {
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .download-btn {
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .download-btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
 </head>
 <body>
   <h1>Download Assignment</h1>
   <div class="buttons">
-    <a href="assignment.txt" download>Download TXT</a>
-    <a href="assignment.pdf" download>Download PDF</a>
-    <a href="assignment.docx" download>Download DOCX</a>
+    <a href="assignment.txt" download><button class="download-btn">Download TXT</button></a>
+    <a href="assignment.pdf" download><button class="download-btn">Download PDF</button></a>
+    <a href="assignment.docx" download><button class="download-btn">Download DOCX</button></a>
   </div>
 </body>
 </html>
-
-
-
-<style>
-
-body {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  margin-top: 50px;
-}
-
-.buttons {
-  margin-top: 30px;
-}
-
-button {
-  padding: 10px 20px;
-  margin: 10px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-
-</style>
